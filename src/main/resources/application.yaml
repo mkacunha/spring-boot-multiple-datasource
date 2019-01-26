@@ -1,0 +1,22 @@
+pedido:
+  datasource:
+    jdbcUrl: jdbc:postgresql://localhost:5432/postgres_db
+    username:  postgres-user
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    jpa.show-sql: false
+    jpa.hibernate.ddl-auto: update
+
+pessoa:
+  datasource:
+      jdbcUrl: jdbc:mysql://localhost:3306/mysql_db
+      username:  mysql-user
+      password: 1234
+      driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    jpa.show-sql: false
+    jpa.hibernate.ddl-auto: update
+
